@@ -16,9 +16,9 @@ Please make sure you have:
 - Aviatrix Controller 6.6
 - AWS access accounts are onboarded. Variable for AWS access account is 'aws_account_name'
 
-## Environment Variables
+## Variables
 
-To run this project, you will need to set the variables
+To run this project, you will need to provide the variables listed in Inputs Section
 
 
 ## Run Locally
@@ -32,7 +32,7 @@ git clone https://github.com/arahimidris/avx66-tgw-connect-overdx.git
 Go to the project directory
 
 ```bash
-cd avx66-tgw-connect-overdx
+cd avx-tgwconnect-overdx
 ```
 
 Set variables using tfvar or environment variables
