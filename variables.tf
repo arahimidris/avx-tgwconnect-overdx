@@ -32,7 +32,6 @@ variable "gw" {
 
 variable "tvif" {
   default = {
-    first = {
       name         = "tvif-tgwconnect"
       mtu          = 8500
       vlanid       = 309
@@ -40,7 +39,6 @@ variable "tvif" {
       ce_address   = "192.168.1.1/31"
       bgp_authkey = "Aviatrix123"
       ce_asn          = 64512
-    }
   }
 }
 variable "prod_inside_cidr" {

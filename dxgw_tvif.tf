@@ -12,14 +12,14 @@ data "aws_dx_connection" "dxcon" {
 resource "aws_dx_transit_virtual_interface" "tvif" {
   connection_id = data.aws_dx_connection.dxcon.id
   dx_gateway_id  = aws_dx_gateway.dxgw.id 
-  name           = var.tvif.first.name
-  vlan           = var.tvif.first.vlanid
+  name           = var.tvif.name
+  vlan           = var.tvif.vlanid
   address_family = "ipv4"
-  bgp_asn        = var.tvif.first.ce_asn
-  amazon_address = var.tvif.first.amzn_address
-  customer_address = var.tvif.first.ce_address
-  mtu = var.tvif.first.mtu
-  bgp_auth_key = var.tvif.first.bgp_authkey
+  bgp_asn        = var.tvif.ce_asn
+  amazon_address = var.tvif.amzn_address
+  customer_address = var.tvif.ce_address
+  mtu = var.tvif.mtu
+  bgp_auth_key = var.tvif.bgp_authkey
 }
 
 output "aws_dxcon_id" {
