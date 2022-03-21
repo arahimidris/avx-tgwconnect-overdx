@@ -7,7 +7,7 @@ variable "dxcon_name" {}
 variable "vm_admin_password" {}
 
 variable "num_connect_peers" {
-  default = 4 /* min value is zero max value is 4 per connect attachment */
+  default = 1 /* min value is zero max value is 4 per connect attachment */
 }
 
 

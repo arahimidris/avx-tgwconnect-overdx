@@ -45,7 +45,7 @@ terraform init
 terraform plan
 terraform apply -auto-approve
 ```
-## Inputs
+## Required Inputs
 
 
 | Name | Description | Default | Required |
