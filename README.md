@@ -79,4 +79,13 @@ terraform apply -auto-approve
 | environments | Specify TGW different Connect attachment types | `"Prod-Connect", "NonProd-Connect"` | yes |
 | mandatory-domains | Specify mandatory TGW domains required by TGW orchestrator | `"Shared_Service_Domain", "Aviatrix_Edge_Domain", "Default_Domain"` | yes |
 | domains | Specify additional TGW Security Domains | `"DX", "Prod", "NonProd"` | yes |
-| vpcs | Specify VPCs with attributes  | `refer to variables.tf` | yes |
+| vpcs.prod.vpccidr |  NonProd VPC CIDR  | `172.16.0.0/24` | yes |
+| vpcs.prod.aws_region | AWS Region for NonProd VPC | `us-east-2` | yes |
+| vpcs.prod.aws_account_name | AWS account used to create NonProd VPC | `arahim-corp-aws` | yes |
+| vpcs.prod.create_ec2 | Create test EC2 instance in NonProd VPC | `true` | yes |
+| vpcs.prod.secdomain | AWS TGW Security Domain to assosciate NonProd VPC | `Prod` | yes |
+| vpcs.nonprod.vpccidr |  NonProd VPC CIDR  | `172.16.1.0/24` | yes |
+| vpcs.nonprod.aws_region | AWS Region for NonProd VPC | `us-east-2` | yes |
+| vpcs.nonprod.aws_account_name | AWS account used to create NonProd VPC | `arahim-corp-aws` | yes |
+| vpcs.nonprod.create_ec2 | Create test EC2 instance in NonProd VPC | `true` | yes |
+| vpcs.nonprod.secdomain | AWS TGW Security Domain to assosciate NonProd VPC | `NonProd` | yes |
