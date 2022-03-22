@@ -119,8 +119,8 @@ dum21            10.12.0.1/24                      u/u
 dum111           -                                 u/u  
 eth0             104.152.199.164/27                u/u  Public Interface
 eth1             192.168.1.1/31                    u/u  arahim-eth1-1G-2527
-eth2             192.168.2.1/31                    A/D  arahim-eth2-50m-2205
-eth3             192.168.3.1/31                    A/D  arahim-eth3-50m-2100
+eth2             192.168.2.1/31                    A/D  arahim-eth2-50m-2205 -->  Not used
+eth3             192.168.3.1/31                    A/D  arahim-eth3-50m-2100 ---> Not used
 lo               127.0.0.1/8                       u/u  
                  ::1/128                                
 tun0             169.254.100.1/29                  u/u  
