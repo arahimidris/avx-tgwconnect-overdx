@@ -94,7 +94,10 @@ terraform apply -auto-approve
 
 ## Outputs
 
-After complete deployment , the EC2 instance in Prod VPCs should be able to access prefixes advertised via on-prem device in prod VRF.
+After complete deployment , 
+
+- The EC2 instance in Prod VPCs should be able to access 10.11.0.1/32 (dum11 interface in 'prod' vrf on vyos appliance ).
+- The EC2 instance in NonProd VPCs should be able to access 10.12.0.1/32 (dum21 interface in 'nonprod' vrf on vyos appliance ).
 
 Below are some of the outputs from the VyoS appliance
 
