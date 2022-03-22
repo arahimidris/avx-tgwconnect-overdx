@@ -26,7 +26,7 @@ To run this project, you will need to provide the variables listed in Inputs Sec
 Clone the project
 
 ```bash
-git clone https://github.com/arahimidris/avx66-tgw-connect-overdx.git
+git clone https://github.com/arahimidris/avx-tgwconnect-overdx.git
 ```
 
 Go to the project directory
