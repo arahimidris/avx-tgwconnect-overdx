@@ -50,8 +50,9 @@ terraform apply -auto-approve
 
 After complete deployment , the EC2 instance in Prod VPCs should be able to access prefixes advertised via on-prem device in prod VRF.
 
-Below is the output of show ip bgp fromt he VyoS appliance
+Below are some of the outputs from the VyoS appliance
 
+```bash
 arahim@AR-onprem:~$   show ip route vrf underlay
 Codes: K - kernel route, C - connected, S - static, R - RIP,
        O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,
@@ -156,7 +157,7 @@ Neighbor        V         AS   MsgRcvd   MsgSent   TblVer  InQ OutQ  Up/Down Sta
 192.168.1.0     4      65000     50466     76329        0    0    0 01:36:15            1        3
 
 Total number of neighbors 1
-
+```
 
 ## Required Inputs
 
